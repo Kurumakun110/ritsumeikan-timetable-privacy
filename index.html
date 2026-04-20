@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー | 立命館時間割</title>
+  <style>
+    :root {
+      --brand: #7E1C31;
+      --text: #222;
+      --muted: #666;
+      --bg: #fffaf6;
+      --card: #ffffff;
+      --border: #eee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    header {
+      text-align: center;
+      padding: 32px 0 24px;
+      border-bottom: 2px solid var(--brand);
+      margin-bottom: 32px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 26px;
+      color: var(--brand);
+      margin: 8px 0 4px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      color: var(--brand);
+      font-size: 19px;
+      margin-top: 36px;
+      padding-left: 12px;
+      border-left: 4px solid var(--brand);
+    }
+    p, li { font-size: 15px; color: var(--text); }
+    ul { padding-left: 24px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .muted { color: var(--muted); font-size: 13px; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    a { color: var(--brand); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">立</div>
+      <h1>プライバシーポリシー</h1>
+      <div class="subtitle">立命館時間割アプリ</div>
+    </header>
+
+    <p>
+      本プライバシーポリシーは、立命館時間割（以下「本アプリ」）における、
+      利用者の情報の取り扱いについて定めるものです。
+      本アプリをご利用いただく前に、必ず本ポリシーをお読みください。
+    </p>
+
+    <h2>1. 収集する情報</h2>
+    <div class="card">
+      <p>本アプリは、利用者を個人として識別できる情報（氏名・住所・電話番号・メールアドレス等）を一切収集しません。</p>
+      <p>以下の情報は、すべて利用者の端末内にのみ保存され、外部に送信されることはありません:</p>
+      <ul>
+        <li>登録した授業情報（授業名・曜日・時限・教室・シラバスURL等）</li>
+        <li>出欠記録</li>
+        <li>課題・スケジュール情報</li>
+        <li>所属キャンパス・学部・年度・学期等の設定情報</li>
+        <li>通知設定</li>
+      </ul>
+    </div>
+
+    <h2>2. 外部サービスとの通信</h2>
+    <div class="card">
+      <p>本アプリは、以下の目的のために外部サービスと通信します。いずれも個人情報を送信するものではありません。</p>
+      <ul>
+        <li><strong>シラバスデータの取得</strong>：立命館大学のシラバス情報を表示するため、本アプリのバックエンド（Supabase）から公開データを取得します。通信時に端末や利用者を識別する情報は送信されません。</li>
+        <li><strong>学内サービスへのリンク</strong>：Campus Web、moodle+R、respon 等のリンクを開く際、外部ブラウザが起動します。これらのサービスは本アプリの管理下にありません。</li>
+      </ul>
+    </div>
+
+    <h2>3. カメラ・写真ライブラリへのアクセス</h2>
+    <div class="card">
+      <p>時間割表の写真から授業を自動登録する機能では、カメラまたは写真ライブラリへのアクセス許可を求めます。</p>
+      <ul>
+        <li>撮影または選択された画像は<strong>端末内でのみ処理</strong>され、外部サーバーに送信されることはありません。</li>
+        <li>文字認識（OCR）はオンデバイスで実行されます（Google ML Kit on-device）。</li>
+        <li>画像そのものは保存されず、認識結果のテキストもアプリ終了時に破棄されます。</li>
+      </ul>
+    </div>
+
+    <h2>4. 通知について</h2>
+    <div class="card">
+      <p>授業開始前のリマインダー通知を有効にするため、通知許可を求めます。</p>
+      <ul>
+        <li>通知はすべて端末内でスケジュールされ、外部から配信されることはありません。</li>
+        <li>通知は設定画面からいつでもオン・オフを切り替えられます。</li>
+      </ul>
+    </div>
+
+    <h2>5. 広告・解析ツール</h2>
+    <div class="card">
+      <p>本アプリは広告を一切表示しません。また、ユーザー行動解析ツール（Google Analytics 等）も使用していません。</p>
+    </div>
+
+    <h2>6. データの削除</h2>
+    <div class="card">
+      <p>アプリを端末からアンインストールすると、端末内に保存されたすべてのデータ（授業情報・出欠記録等）が完全に削除されます。</p>
+    </div>
+
+    <h2>7. 未成年の利用について</h2>
+    <div class="card">
+      <p>本アプリは立命館大学の学生を主な対象としていますが、個人情報を収集しないため年齢による利用制限は設けていません。</p>
+    </div>
+
+    <h2>8. ポリシーの変更</h2>
+    <div class="card">
+      <p>本ポリシーの内容は、必要に応じて変更される場合があります。変更があった場合は、本ページにて告知します。重要な変更については、アプリ内でも通知します。</p>
+    </div>
+
+    <h2>9. お問い合わせ</h2>
+    <div class="card">
+      <p>本アプリおよび本ポリシーに関するお問い合わせは、アプリ内の「設定」→「お問い合わせ」よりご連絡ください。</p>
+      <p class="muted">※本アプリは立命館大学の公式アプリではなく、有志の学生によって開発・運営されている非公式アプリです。</p>
+    </div>
+
+    <footer>
+      制定日：2026年4月<br>
+      最終更新日：2026年4月20日<br><br>
+      &copy; 2026 立命館時間割
+    </footer>
+  </div>
+</body>
+</html>
